@@ -1,0 +1,194 @@
+[debug] [2023-02-10T11:16:12.461Z] : 
+[debug] [2023-02-10T11:16:12.461Z] : ----------------------------------------------------------------------
+[debug] [2023-02-10T11:16:12.462Z] : Command:      /usr/local/bin/node /usr/local/bin/catalyst serve
+[debug] [2023-02-10T11:16:12.462Z] : CLI Version:  1.13.3
+[debug] [2023-02-10T11:16:12.462Z] : Platform:     darwin
+[debug] [2023-02-10T11:16:12.463Z] : Node Version: v18.14.0
+[debug] [2023-02-10T11:16:12.464Z] : Time:         Fri Feb 10 2023 16:46:12 GMT+0530 (India Standard Time)
+[debug] [2023-02-10T11:16:12.464Z] : ----------------------------------------------------------------------
+[debug] [2023-02-10T11:16:12.464Z] : 
+[debug] [2023-02-10T11:16:12.906Z] : > authorizing via signed-in user option
+[debug] [2023-02-10T11:16:12.906Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.functions.ALL","ZohoCatalyst.functions.EXECUTE","ZohoCatalyst.webapp.ALL"]
+[debug] [2023-02-10T11:16:12.912Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/684000000009983 
+
+[debug] [2023-02-10T11:16:13.226Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Fri, 10 Feb 2023 11:16:14 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=99131cfabfda186b4fe68a16fb8fedd6; Path=/","ZD_CSRF_TOKEN=8b8b3e53-f2e4-404f-8037-160dd882896f;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=8b8b3e53-f2e4-404f-8037-160dd882896f;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2023-02-10T11:16:13.229Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/684000000009983/environment 
+
+[debug] [2023-02-10T11:16:13.543Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Fri, 10 Feb 2023 11:16:14 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=7c58023b2365c117e2ff9b6feb09efa2; Path=/","ZD_CSRF_TOKEN=b702ba52-40cb-4a8b-a349-d96ed5db90e3;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=b702ba52-40cb-4a8b-a349-d96ed5db90e3;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2023-02-10T11:16:13.645Z] : http port : '3000' is not available. Hence port '3002' will be used instead.
+[debug] [2023-02-10T11:16:13.649Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/684000000009983/function 
+Query params: {"type":"basicio,event,cron,applogic,integration"}
+
+[debug] [2023-02-10T11:16:13.653Z] : http port : '3030' is not available. Hence port '3034' will be used instead.
+[debug] [2023-02-10T11:16:13.939Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Fri, 10 Feb 2023 11:16:14 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=7c58023b2365c117e2ff9b6feb09efa2; Path=/","ZD_CSRF_TOKEN=b5ae19c8-be3e-4b1b-a2a8-8be0477c539e;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=b5ae19c8-be3e-4b1b-a2a8-8be0477c539e;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2023-02-10T11:16:13.945Z] : unknown eol undefined hence skipping check
+[debug] [2023-02-10T11:16:13.951Z] : http port : '3010' is not available. Hence port '3012' will be used instead.
+[info] [2023-02-10T11:16:13.970Z] : ℹ server[bakes_cakes_function]: URL : http://localhost:3002/server/bakes_cakes_function/
+[info] [2023-02-10T11:16:13.970Z] : 
+[info] [2023-02-10T11:16:14.089Z] : ℹ client[bakesCakes]: URL : http://localhost:3002/app/
+[info] [2023-02-10T11:20:14.337Z] : Change(s) is detected in main.js of the Web-Client.
+[info] [2023-02-10T11:21:17.505Z] : Change(s) is detected in main.js of the Web-Client.
+[info] [2023-02-10T11:21:42.716Z] : Change(s) is detected in main.js of the Web-Client.
+[info] [2023-02-10T11:25:57.555Z] : 
+change of index.js in bakes_cakes_function detected. Preparing your function, please wait...
+[info] [2023-02-10T11:25:57.565Z] : ℹ server[bakes_cakes_function]: URL : http://localhost:3002/server/bakes_cakes_function/
+[info] [2023-02-10T11:25:57.566Z] : 
+[info] [2023-02-10T11:25:57.666Z] : ℹ server[bakes_cakes_function]: ready!
+[info] [2023-02-10T11:26:27.916Z] : 
+change of index.js in bakes_cakes_function detected. Preparing your function, please wait...
+[info] [2023-02-10T11:26:27.926Z] : ℹ server[bakes_cakes_function]: URL : http://localhost:3002/server/bakes_cakes_function/
+[info] [2023-02-10T11:26:27.926Z] : 
+[info] [2023-02-10T11:26:28.026Z] : ℹ server[bakes_cakes_function]: ready!
+[info] [2023-02-10T11:26:41.815Z] : 
+change of index.js in bakes_cakes_function detected. Preparing your function, please wait...
+[info] [2023-02-10T11:26:41.819Z] : ℹ server[bakes_cakes_function]: URL : http://localhost:3002/server/bakes_cakes_function/
+[info] [2023-02-10T11:26:41.820Z] : 
+[info] [2023-02-10T11:26:41.921Z] : ℹ server[bakes_cakes_function]: ready!
+[info] [2023-02-10T11:27:20.133Z] : 
+change of index.js in bakes_cakes_function detected. Preparing your function, please wait...
+[info] [2023-02-10T11:27:20.142Z] : ℹ server[bakes_cakes_function]: URL : http://localhost:3002/server/bakes_cakes_function/
+[info] [2023-02-10T11:27:20.142Z] : 
+[info] [2023-02-10T11:27:20.243Z] : ℹ server[bakes_cakes_function]: ready!
+[info] [2023-02-10T11:29:34.320Z] : Change(s) is detected in index.html of the Web-Client.
+[info] [2023-02-10T11:29:45.354Z] : 
+change of index.js in bakes_cakes_function detected. Preparing your function, please wait...
+[info] [2023-02-10T11:29:45.362Z] : ℹ server[bakes_cakes_function]: URL : http://localhost:3002/server/bakes_cakes_function/
+[info] [2023-02-10T11:29:45.362Z] : 
+[debug] [2023-02-10T11:29:45.366Z] : Connection reset from target URL :  Url {
+  protocol: 'http:',
+  slashes: true,
+  auth: null,
+  host: '127.0.0.1:3012',
+  port: '3012',
+  hostname: '127.0.0.1',
+  hash: null,
+  search: null,
+  query: null,
+  pathname: '/',
+  path: '/',
+  href: 'http://127.0.0.1:3012/'
+}
+[info] [2023-02-10T11:29:45.463Z] : ℹ server[bakes_cakes_function]: ready!
+[info] [2023-02-10T11:34:35.504Z] : Change(s) is detected in index.html of the Web-Client.
+[info] [2023-02-10T11:34:35.517Z] : 
+change of index.js in bakes_cakes_function detected. Preparing your function, please wait...
+[info] [2023-02-10T11:34:35.542Z] : ℹ server[bakes_cakes_function]: URL : http://localhost:3002/server/bakes_cakes_function/
+[info] [2023-02-10T11:34:35.542Z] : 
+[info] [2023-02-10T11:34:35.644Z] : ℹ server[bakes_cakes_function]: ready!
+[info] [2023-02-10T11:36:41.655Z] : Change(s) is detected in index.html of the Web-Client.
+[info] [2023-02-10T15:16:04.488Z] : 
+change of index.js in bakes_cakes_function detected. Preparing your function, please wait...
+[debug] [2023-02-10T15:16:04.510Z] : Connection reset from target URL :  Url {
+  protocol: 'http:',
+  slashes: true,
+  auth: null,
+  host: '127.0.0.1:3012',
+  port: '3012',
+  hostname: '127.0.0.1',
+  hash: null,
+  search: null,
+  query: null,
+  pathname: '/',
+  path: '/',
+  href: 'http://127.0.0.1:3012/'
+}
+[info] [2023-02-10T15:16:04.525Z] : ℹ server[bakes_cakes_function]: URL : http://localhost:3002/server/bakes_cakes_function/
+[info] [2023-02-10T15:16:04.525Z] : 
+[info] [2023-02-10T15:16:04.626Z] : ℹ server[bakes_cakes_function]: ready!
+[info] [2023-02-10T15:16:05.628Z] : 
+change of index.js in bakes_cakes_function detected. Preparing your function, please wait...
+[info] [2023-02-10T15:16:05.631Z] : ℹ server[bakes_cakes_function]: URL : http://localhost:3002/server/bakes_cakes_function/
+[info] [2023-02-10T15:16:05.631Z] : 
+[info] [2023-02-10T15:16:05.732Z] : ℹ server[bakes_cakes_function]: ready!
+[debug] [2023-02-10T15:16:15.563Z] : > refreshing access token <
+[debug] [2023-02-10T15:16:15.565Z] : >>>> HTTP REQUEST : POST https://accounts.zoho.in/oauth/v2/token 
+<request body omitted>
+
+[debug] [2023-02-10T15:16:15.734Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Fri, 10 Feb 2023 15:16:15 GMT","content-type":"application/json;charset=UTF-8","content-length":"2727","connection":"close","set-cookie":["6e73717622=3bcf233c3836eb7934b6f3edc257f951; Path=/","iamcsr=7e57915a-e503-4903-a1a5-f39de24ed337;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=7e57915a-e503-4903-a1a5-f39de24ed337;path=/;SameSite=Strict;Secure;priority=high"],"cache-control":"no-store","x-content-type-options":"nosniff","pragma":"no-cache","x-xss-protection":"1","x-frame-options":"SAMEORIGIN","vary":"accept-encoding","content-language":"en-US","strict-transport-security":"max-age=63072000"}
+
+[info] [2023-02-10T15:17:01.945Z] : Shutting down server
+[debug] [2023-02-10T15:17:01.946Z] : client server closed
+[debug] [2023-02-10T15:17:01.948Z] : Connection reset from target URL :  Url {
+  protocol: 'http:',
+  slashes: true,
+  auth: null,
+  host: '127.0.0.1:3012',
+  port: '3012',
+  hostname: '127.0.0.1',
+  hash: null,
+  search: null,
+  query: null,
+  pathname: '/',
+  path: '/',
+  href: 'http://127.0.0.1:3012/'
+}
+[info] [2023-02-10T15:17:01.949Z] : 
+[info] [2023-02-10T15:17:01.949Z] : ✔ Shutdown complete
+[debug] [2023-02-10T15:17:01.950Z] : NO ERRORS REGISTERED
+[debug] [2023-02-10T15:17:01.950Z] : EXEC ENDED with event: serve, message: success
+[debug] [2023-02-10T15:17:01.950Z] : TOTAL DURATION OF COMMAND EXEC : 14449050
+[error] [2023-02-10T15:17:01.958Z] : uncaughtException: ENOENT: no such file or directory, open '/var/folders/10/2fbqr6mn6_5_76vbd71bl9340000gn/T/.catalyst/catalyst-http-log.json'
+Error: ENOENT: no such file or directory, open '/var/folders/10/2fbqr6mn6_5_76vbd71bl9340000gn/T/.catalyst/catalyst-http-log.json'
+[error] [2023-02-10T15:17:01.962Z] : ✖ An unexpected error has occurred.
+[debug] [2023-02-10T15:17:01.962Z] : Error Stack: CatalystError: An unexpected error has occurred.
+    at exports.default (/usr/local/lib/node_modules/zcatalyst-cli/lib/errorOut.js:19:17)
+    at process.<anonymous> (/usr/local/lib/node_modules/zcatalyst-cli/lib/bin/catalyst.js:87:28)
+    at process.emit (node:events:525:35)
+    at process._fatalException (node:internal/process/execution:149:25)
+[debug] [2023-02-10T15:17:01.962Z] : Original Error: Error: ENOENT: no such file or directory, open '/var/folders/10/2fbqr6mn6_5_76vbd71bl9340000gn/T/.catalyst/catalyst-http-log.json'
+[debug] [2023-02-10T15:17:01.963Z] : Error Status: 500
+[info] [2023-02-10T15:17:01.963Z] : Kindly contact Catalyst support [support@zohocatalyst.com] if you need any further assistance
+[debug] [2023-02-11T16:03:34.416Z] : 
+[debug] [2023-02-11T16:03:34.417Z] : ----------------------------------------------------------------------
+[debug] [2023-02-11T16:03:34.417Z] : Command:      /usr/local/bin/node /usr/local/bin/catalyst serve
+[debug] [2023-02-11T16:03:34.417Z] : CLI Version:  1.13.3
+[debug] [2023-02-11T16:03:34.417Z] : Platform:     darwin
+[debug] [2023-02-11T16:03:34.418Z] : Node Version: v18.14.0
+[debug] [2023-02-11T16:03:34.422Z] : Time:         Sat Feb 11 2023 21:33:34 GMT+0530 (India Standard Time)
+[debug] [2023-02-11T16:03:34.423Z] : ----------------------------------------------------------------------
+[debug] [2023-02-11T16:03:34.423Z] : 
+[debug] [2023-02-11T16:03:34.779Z] : > authorizing via signed-in user option
+[debug] [2023-02-11T16:03:34.779Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.functions.ALL","ZohoCatalyst.functions.EXECUTE","ZohoCatalyst.webapp.ALL"]
+[debug] [2023-02-11T16:03:34.785Z] : > refreshing access token <
+[debug] [2023-02-11T16:03:34.785Z] : >>>> HTTP REQUEST : POST https://accounts.zoho.in/oauth/v2/token 
+<request body omitted>
+
+[debug] [2023-02-11T16:03:34.991Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 11 Feb 2023 16:03:35 GMT","content-type":"application/json;charset=UTF-8","content-length":"2727","connection":"close","set-cookie":["6e73717622=94da0c17b67b4320ada519c299270f95; Path=/","iamcsr=ee89522a-46b3-44f9-8e82-f2961849aec4;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=ee89522a-46b3-44f9-8e82-f2961849aec4;path=/;SameSite=Strict;Secure;priority=high"],"cache-control":"no-store","x-content-type-options":"nosniff","pragma":"no-cache","x-xss-protection":"1","x-frame-options":"SAMEORIGIN","vary":"accept-encoding","content-language":"en-US","strict-transport-security":"max-age=63072000"}
+
+[debug] [2023-02-11T16:03:35.006Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/684000000009983 
+
+[debug] [2023-02-11T16:03:36.053Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 11 Feb 2023 16:03:36 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=99131cfabfda186b4fe68a16fb8fedd6; Path=/","ZD_CSRF_TOKEN=704d97a4-ae96-4558-beb5-6829815bb62e;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=704d97a4-ae96-4558-beb5-6829815bb62e;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2023-02-11T16:03:36.057Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/684000000009983/environment 
+
+[debug] [2023-02-11T16:03:36.185Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 11 Feb 2023 16:03:36 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=99131cfabfda186b4fe68a16fb8fedd6; Path=/","ZD_CSRF_TOKEN=e69b2d51-945f-4ebc-b991-fca05e4fea7e;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=e69b2d51-945f-4ebc-b991-fca05e4fea7e;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2023-02-11T16:03:36.282Z] : http port : '3000' is not available. Hence port '3001' will be used instead.
+[debug] [2023-02-11T16:03:36.285Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/684000000009983/function 
+Query params: {"type":"basicio,event,cron,applogic,integration"}
+
+[debug] [2023-02-11T16:03:36.287Z] : http port : '3030' is not available. Hence port '3032' will be used instead.
+[debug] [2023-02-11T16:03:36.408Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 11 Feb 2023 16:03:36 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=99131cfabfda186b4fe68a16fb8fedd6; Path=/","ZD_CSRF_TOKEN=f7b2c408-3647-49c2-bfaa-e67250efda5b;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=f7b2c408-3647-49c2-bfaa-e67250efda5b;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2023-02-11T16:03:36.411Z] : unknown eol undefined hence skipping check
+[debug] [2023-02-11T16:03:36.416Z] : http port : '3010' is not available. Hence port '3011' will be used instead.
+[info] [2023-02-11T16:03:36.432Z] : ℹ server[bakes_cakes_function]: URL : http://localhost:3001/server/bakes_cakes_function/
+[info] [2023-02-11T16:03:36.432Z] : 
+[info] [2023-02-11T16:03:36.552Z] : ℹ client[bakesCakes]: URL : http://localhost:3001/app/
+[info] [2023-02-13T09:59:54.752Z] : 
+change of index.js in bakes_cakes_function detected. Preparing your function, please wait...
+[info] [2023-02-13T09:59:54.766Z] : Change(s) is detected in main.js of the Web-Client.
+[info] [2023-02-13T09:59:54.779Z] : ℹ server[bakes_cakes_function]: URL : http://localhost:3001/server/bakes_cakes_function/
+[info] [2023-02-13T09:59:54.780Z] : 
+[info] [2023-02-13T09:59:54.881Z] : ℹ server[bakes_cakes_function]: ready!

@@ -1,0 +1,29 @@
+{
+  "defaults": {
+    "project": 1,
+    "env": 1
+  },
+  "actives": {
+    "project": 1,
+    "env": 1
+  },
+  "projects": [
+    {
+      "idx": 1,
+      "id": "684000000009983",
+      "name": "BakesCakes",
+      "domain": {
+        "id": "50012336066",
+        "name": "bakescakes-60019576546.development"
+      },
+      "env": [
+        {
+          "idx": 1,
+          "id": "60019576546",
+          "name": "Development",
+          "type": 3
+        }
+      ]
+    }
+  ]
+}

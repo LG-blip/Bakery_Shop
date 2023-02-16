@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sweet Treats | The Ultimate Bakery</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="brave_images/logo.png" width="125px">
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Products</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="">Accounts</a></li>
+                    </ul>
+                </nav>
+                <img src="brave_images/cart.png" width="30px" height="30px" onclick="">
+                <!-- <img src="images/images/menu.png" class="menu-icon" height="30px" onclick="menutoggle()"> -->
+            </div>
+
+            <div class="row">
+                <div class="col-2">
+                    <h1>Amazing cakes<br>on your way!</h1>
+                    <p>Baking everything is our specialty.</p>
+                    <a href="" class="btn">Explore now &#8594;</a>
+                </div>
+                <div class="col-2">
+                    <img src="brave_images/Cookies-From-Galaxy-Cake.jpg">
+                </div>
+            </div>
+        </div>
+
+        <!-- feature categories -->
+        <div class="header">
+            <div class="categories">
+                <div class="row">
+                    <div class="col-3">
+                        <img src="brave_images/bakery1-3.jpg">
+                    </div>
+                    <div class="col-3">
+                        <img src="brave_images/bakeryproducts.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- cart page -->
+        <div class="cart">
+            <div class="container">
+                <div class="row">
+                    <div class="col-2">
+                        <img src="brave_images/bakery1-3.jpg">
+                    </div>
+                    <div class="col-2">
+                        <p>Home / Cakes</p>
+                        <h1>Loaded with goodness of chocolate and
+                            fulled with sugar syrup.
+                        </h1>
+                        <select name="" id="quant1">
+                            <option>Quantity</option>
+                            <option>1</option>
+                            <option>2</option>
+                        </select>
+                        <select name="" id="flav1">
+                            <option>Flavour</option>
+                            <option>Vanilla</option>
+                            <option>Chocolate</option>
+                        </select>
+                        <select name="" id="loc1">
+                            <option>Location</option>
+                            <option>Guduvanchery</option>
+                            <option>Tambaram</option>
+                        </select>
+                        <input type="text" value=" Available" id="status">
+                        <input type="button" value="Confirm" class="btn1" onclick="OrderMethod()"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <h3>Download our app</h3>
+                        <p>Download for android and ios</p>
+                    </div>
+                    <div class="footer-col-2">
+                        <p>Our purpose is to bring the absolute joy
+                            out of the food we make.
+                        </p>
+                    </div>
+                    <div class="footer-col-3">
+                        <h3>Useful Links</h3>
+                        <ul>
+                            <li>Coupons</li>
+                            <li>Blog</li>
+                            <li>Return Policy</li>
+                            <li>Join Affiliate</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-4">
+                        <h3>Follow Us</h3>
+                        <ul>
+                            <li>Facebook</li>
+                            <li>Instagram</li>
+                            <li>Twitter</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- js for toggle menu -->
+    <!-- optional code for menu icon -->
+    <!-- <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px"){
+                MenuItems.style.maxHeight = "200px"
+            }
+            else{
+                MenuItems.style.maxHeight = "0px"
+            }
+        }
+    </script> -->
+
+
+
+    <script>
+        
+        
+function OrderMethod() {
+    var price = 0
+    var quantity = 0;
+
+    var flavour = document.getElementById("flav1").value
+    var quantity = document.getElementById("quant1").value
+    var location = document.getElementById("loc1").value
+
+    // console.log(document.getElementById("flav1").value)
+    // console.log(document.getElementById("quant1").value)
+    // console.log(document.getElementById("loc1").value)
+    // console.log(price);
+
+    if(quantity > price){
+        price = quantity * 200;
+    }
+
+    $.ajax({
+        url: "/server/bakes_cakes_function/alien", //If your Advanced I/O function is coded in the Java environment, replace the "alien_city_function" with "AlienCityAIO"
+        type: "post",
+        contentType: "application/json",
+        data: JSON.stringify({
+            "flavour": flavour,
+            "location":location,
+            "quantity" : quantity,
+            "price" : price
+        }),
+        success: function (data) {
+            alert(data.message);
+        },
+        error: function (error) {
+            alert(error.message);
+        }
+    });
+
+    return flavour;
+    // return price
+}
+
+    </script>
+</body>
+
+</html>

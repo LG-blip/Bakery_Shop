@@ -1,0 +1,12 @@
+{
+  "functions": {
+    "targets": [
+      "bakes_cakes_function"
+    ],
+    "ignore": [],
+    "source": "functions"
+  },
+  "client": {
+    "source": "client"
+  }
+}
